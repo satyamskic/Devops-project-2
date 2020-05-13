@@ -19,16 +19,16 @@ Will share the submission details soon
 
 3. Create a job chain of job1, job2, job3 and job4 using build pipeline plugin in Jenkins
 
-4. Job1 : Pull the Github repo automatically when some developers push repo to Github.
+4. **Job1** : Pull the Github repo automatically when some developers push repo to Github.
 
-5. Job2 : By looking at the code or program file, Jenkins should automatically start the respective language interpreter install image 
+5. **Job2** : By looking at the code or program file, Jenkins should automatically start the respective language interpreter install image 
 container to deploy code ( eg. If code is of PHP, then Jenkins should start the container that has PHP already installed ).
 
-6. Job3 : Test your app if it is working or not.
+6. **Job3** : Test your app if it is working or not.
 
-7. Job4 : if app is not working , then send email to developer with error messages.
+7. **Job4** : if app is not working , then send email to developer with error messages.
 
-8. Create One extra job job5 for monitor : If container where app is running. fails due to any reson then this job should automatically start the container again.
+8. Create One extra job **job5** for monitor : If container where app is running. fails due to any reson then this job should automatically start the container again.
 
 That's shit
 
@@ -108,7 +108,7 @@ Click on Start using Jenkins
 
 
 
-Now we are gonna create our first Job-3 on Jenkins in which Our task is " Test your app if it 
+Now we are gonna create our first **Job-3** on Jenkins in which Our task is " Test your app if it 
 is working or not." For this i used concept of exit status code. if any site have exit status code
  200 it means it is working fine and other than 200 it means it is not working.By using curl 
 command you can varify your site's exit status code something like in image as i shown you .
@@ -118,7 +118,7 @@ command you can varify your site's exit status code something like in image as i
 
 
 
-Now we are gonna create our first Job-4 on Jenkins in which Our task is " if app is not working , 
+Now we are gonna create our first **Job-4** on Jenkins in which Our task is " if app is not working , 
 then send email to developer with error messages" Then We have two method to do complete job-4 .
 
 
