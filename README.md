@@ -33,15 +33,25 @@ container to deploy code ( eg. If code is of PHP, then Jenkins should start the 
 That's shit
 
 Now I am going to explain about How i created my task and How I integrate with Docker , Jenkins and Github.
+
 Basic tools required: 
-  -Git
-  -Jenkins
-  -OpenJDK 
-  -Docker
-  -RedHat Linux EnterPrice (RHEL-8)
-  -Python36
-  -centos image ( on the top of docker)
+
+    - Git
+   
+    - Jenkins
+  
+    - OpenJDK 
+   
+    - Docker
+   
+    - RedHat Linux EnterPrice (RHEL-8)
+  
+    - Python36
+   
+    - centos image ( on the top of docker)
+
 i created my project by using these tools basically.
+
 Let's start now 
 
 # Step 1:-
@@ -51,11 +61,13 @@ First We have to create our enviroment like docker and jenkin. We can do it mann
 
 # Step 2 :-
 For start the docker services use command
+
     - systemctl start docker
 
 When your envirment become ready then use following commands to launch docker inside docker-container
 docker run -it -v /var/run/docker.sock:/var/run/docker.sock --name <container_name> <image_name>:<tag>
 You can varify your running container
+ 
     - docker ps
     - docker ps -a
 
