@@ -105,3 +105,33 @@ Add alt text
 
 
 Click on Start using Jenkins
+
+
+
+Now we are gonna create our first Job-3 on Jenkins in which Our task is " Test your app if it 
+is working or not." For this i used concept of exit status code. if any site have exit status code
+ 200 it means it is working fine and other than 200 it means it is not working.By using curl 
+command you can varify your site's exit status code something like in image as i shown you .
+
+
+
+
+
+
+Now we are gonna create our first Job-4 on Jenkins in which Our task is " if app is not working , 
+then send email to developer with error messages" Then We have two method to do complete job-4 .
+
+
+
+By using Jenkins tool
+Jenkins have already something intenally option available for mail system . First we have to go 
+to Manage jenkins/configuration system as I shown in image
+
+
+
+
+then fill some important details for mail system like SMTP server , username ,passowrd and SMTP port.
+ In username filled your gmail id from which you want to send mail and in possword fill your gmail 
+password. Then choose SMTP port , but you can choose as your requirement but generally mostly cases 
+we use 465 or 587.
+
