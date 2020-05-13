@@ -48,3 +48,48 @@ Let's start now
 
 First We have to create our enviroment like docker and jenkin. We can do it mannully or by using Dockerfile which i am showing you. When we build it then our complete enviroment get -ready. But only our yum/dnf should be configure as well as need Internet connectivity to for ready all the basic setup.When we launch this image, it should automatically starts Jenkins service inside the container.
 
+
+# Step 2 :-
+For start the docker services use command
+    - systemctl start docker
+
+When your envirment become ready then use following commands to launch docker inside docker-container
+docker run -it -v /var/run/docker.sock:/var/run/docker.sock --name <container_name> <image_name>:<tag>
+You can varify your running container
+    - docker ps
+    - docker ps -a
+
+
+# Step-3 :-
+
+After running Dockerfile our complete setup automatically launch, then go on site and try to access jenkins. you can access like this. Go to site and type
+
+<container_ip_address>:<port_no>
+
+### Note:-
+Mainly jenkins runs on port no 8080
+
+
+When you will try to access jenkins then intitially you have to do some setup. It will show something like this initally. then just go to your redhat terminal and type this command for Unlock Jenkins
+docker exec <container_name> cat /var/lib/Jenkins/secrets/initialAdminPassword
+
+
+
+
+
+
+
+Add alt text
+
+Just copy and paste inside it.
+
+
+
+
+
+
+
+Add alt text
+
+
+Click on Start using Jenkins
